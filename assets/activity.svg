@@ -397,7 +397,7 @@
 <rect x="876" y="77" width="12" height="12" rx="2" fill="#302824"/>
 <rect x="876" y="92" width="12" height="12" rx="2" fill="#302824"/>
 <rect x="876" y="107" width="12" height="12" rx="2" fill="#302824"/>
-<rect x="876" y="122" width="12" height="12" rx="2" fill="#302824"/>
+<rect x="876" y="122" width="12" height="12" rx="2" fill="#653c2a"/>
 <g clip-path="url(#chart)">
   <g class="scan">
     <rect x="-36" y="75" width="80" height="108" fill="url(#scan)"/>
