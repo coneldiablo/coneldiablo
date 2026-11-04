@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="56" viewBox="0 0 800 56" role="img" aria-label="Building voice AI, CRM integrations and Telegram bots">
+<style>.row{opacity:0;animation:line 12s infinite}.b{animation-delay:4s}.c{animation-delay:8s}@keyframes line{0%,30%{opacity:1}33%,100%{opacity:0}}.caret{animation:blink 1s steps(2) infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.row{animation:none}.a{opacity:1}.caret{animation:none}}</style>
+<g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="22" text-anchor="middle" fill="#79b6ff">
+<text class="row a" x="400" y="36">Building voice AI &amp; CRM integrations</text>
+<text class="row b" x="400" y="36">Python · TypeScript · React · Docker</text>
+<text class="row c" x="400" y="36">From Telegram bots to fullstack apps</text>
+</g></svg>
