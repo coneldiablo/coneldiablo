@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+  <title id="title">coneldiablo — Voice AI, CRM and automation</title>
+  <desc id="desc">An amber voice waveform runs through a dark interface with a fine technical grid.</desc>
+  <defs>
+    <linearGradient id="surface" x2="100%" y2="100%">
+      <stop stop-color="#191817"/>
+      <stop offset="1" stop-color="#10100f"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#b96b2b" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#b96b2b" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="23" height="23" patternUnits="userSpaceOnUse">
+      <path d="M23 0H0V23" fill="none" stroke="#ffc38f" stroke-opacity=".12"/>
+    </pattern>
+    <linearGradient id="wave">
+      <stop stop-color="#b95c31"/>
+      <stop offset=".55" stop-color="#ffad70"/>
+      <stop offset="1" stop-color="#ffdab0"/>
+    </linearGradient>
+    <clipPath id="frame"><rect x="1" y="1" width="958" height="298" rx="17"/></clipPath>
+    <clipPath id="plot"><rect x="607" y="85" width="314" height="143" rx="10"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="958" height="298" rx="17" fill="url(#surface)" stroke="#4f453c" stroke-width="2"/>
+  <g clip-path="url(#frame)">
+    <ellipse cx="792" cy="149" rx="380" ry="230" fill="url(#halo)"/>
+    <path d="M0 53H960M0 253H960" stroke="#4a3d32"/>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="2">
+    <circle cx="42" cy="27" r="4" fill="#ffac70"/>
+    <text x="58" y="32" fill="#ffbd8a">ENGINEERING / PROFILE</text>
+    <text x="920" y="32" text-anchor="end" fill="#d8bcab">01 / OVERVIEW</text>
+    <text x="38" y="108" fill="#ffbd8a">VOICE AI / CRM / AUTOMATION</text>
+    <text x="38" y="282" fill="#d8bcab">BUILDING TOOLS FOR REAL WORKFLOWS</text>
+    <text x="920" y="282" text-anchor="end" fill="#ffbd8a">GITHUB.COM / CONELDIABLO</text>
+  </g>
+  <text x="34" y="180" fill="#fff0e1" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="76" letter-spacing="-4">coneldiablo</text>
+  <text x="39" y="218" fill="#e5c9b8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="19">From a conversation to a workflow.</text>
+  <rect x="607" y="85" width="314" height="143" rx="10" fill="#161311" stroke="#694a36"/>
+  <g clip-path="url(#plot)">
+    <rect x="607" y="85" width="314" height="143" fill="url(#grid)"/>
+    <path d="M607 156H921" fill="none" stroke="#a07558" stroke-dasharray="3 5" stroke-opacity=".65"/>
+    <path d="M620 156H633L640 151L646 160L654 145L663 168L672 134L681 182L690 115L700 197L710 133L719 172L727 148L735 158L743 152L752 156H765L772 149L780 165L787 138L795 179L805 122L815 188L824 136L833 168L842 148L850 160L858 154L867 156H909" fill="none" stroke="#e08b51" stroke-width="8" stroke-opacity=".12" stroke-linejoin="round"/>
+    <path d="M620 156H633L640 151L646 160L654 145L663 168L672 134L681 182L690 115L700 197L710 133L719 172L727 148L735 158L743 152L752 156H765L772 149L780 165L787 138L795 179L805 122L815 188L824 136L833 168L842 148L850 160L858 154L867 156H909" fill="none" stroke="url(#wave)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#ffbd8a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="1.5">
+    <text x="621" y="106">FIG 01</text>
+    <text x="908" y="213" text-anchor="end">VOICE SIGNAL</text>
+  </g>
+</svg>

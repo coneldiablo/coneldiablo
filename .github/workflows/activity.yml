@@ -1,0 +1,31 @@
+name: Refresh contribution calendar
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-calendar
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Render public contribution calendar
+        run: python3 scripts/render_activity.py
+      - name: Commit updated calendar
+        run: |
+          if git diff --quiet -- assets/activity.svg; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/activity.svg
+          git commit -m 'Refresh contribution calendar'
+          git push
