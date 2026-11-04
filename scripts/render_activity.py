@@ -8,7 +8,7 @@ from urllib.request import Request, urlopen
 
 CALENDAR_URL = "https://github.com/users/coneldiablo/contributions"
 ASSET = Path(__file__).resolve().parents[1] / "assets" / "activity.svg"
-COLORS = ("#302824", "#653c2a", "#a95c35", "#e9874d", "#ffb47b")
+COLORS = ("#2a1f24", "#83404b", "#b64b54", "#ea5453", "#ffa196")
 MONTHS = ("JAN", "FEB", "MAR", "APR", "MAY", "JUN",
           "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
 
@@ -46,41 +46,42 @@ def render(days):
 <defs>
   <clipPath id="chart"><rect x="44" y="75" width="878" height="108" rx="4"/></clipPath>
   <linearGradient id="scan">
-    <stop stop-color="#ffb47b" stop-opacity="0"/>
-    <stop offset="1" stop-color="#ffb47b" stop-opacity=".34"/>
+    <stop stop-color="#ff594f" stop-opacity="0"/>
+    <stop offset="1" stop-color="#ff594f" stop-opacity=".34"/>
   </linearGradient>
 </defs>
 <style>
-  .scan { animation: sweep 8s linear 2 both; }
+  .scan { animation: sweep 4.6s linear 1 both; }
   @keyframes sweep { from { transform: translateX(0); } to { transform: translateX(960px); } }
   @media (prefers-reduced-motion: reduce) { .scan { display: none; } }
 </style>
-<rect x="1" y="1" width="958" height="227" rx="17" fill="#171513" stroke="#4f453c" stroke-width="2"/>
-<path d="M1 51H959M1 193H959" stroke="#4a3d32"/>
+<rect x="1" y="1" width="958" height="227" rx="5" fill="#110d10" stroke="#4a333a" stroke-width="2"/>
+<path d="M1 51H959M1 193H959" stroke="#402c35"/>
 <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="600">
-  <circle cx="42" cy="26" r="4" fill="#ffac70"/>
-  <text x="58" y="31" fill="#ffbd8a" font-size="13" letter-spacing="2">CONTRIBUTION SIGNAL</text>
-  <text x="920" y="31" text-anchor="end" fill="#d8bcab" font-size="13" letter-spacing="2">02 / ACTIVITY</text>''']
+  <circle cx="42" cy="26" r="4" fill="#ff645a"/>
+  <text x="58" y="31" fill="#ffa59a" font-size="16" letter-spacing="2">CONTRIBUTION SIGNAL</text>
+  <text x="920" y="31" text-anchor="end" fill="#e1cdd4" font-size="15" letter-spacing="2">LAST 12 MONTHS</text>''']
+    column_spacing = 872 / weeks
     previous_label = -5
     for day, level in sorted(days.items()):
         column, row = divmod((day - sunday).days, 7)
-        x, y = 44 + 16 * column, 77 + 15 * row
+        x, y = round(44 + column_spacing * column, 2), 77 + 15 * row
         if day.day == 1 and column - previous_label >= 4 and column <= weeks - 3:
-            svg.append(f'<text x="{x}" y="68" fill="#d8bcab" font-size="10">{MONTHS[day.month - 1]}</text>')
+            svg.append(f'<text x="{x}" y="68" fill="#e1cdd4" font-size="13">{MONTHS[day.month - 1]}</text>')
             previous_label = column
         svg.append(f'<rect x="{x}" y="{y}" width="12" height="12" rx="2" fill="{COLORS[level]}"/>')
 
     svg.append('''<g clip-path="url(#chart)">
   <g class="scan">
     <rect x="-36" y="75" width="80" height="108" fill="url(#scan)"/>
-    <path d="M44 75V183" stroke="#ffbd8a" stroke-opacity=".7"/>
+    <path d="M44 75V183" stroke="#ffa59a" stroke-opacity=".7"/>
   </g>
 </g>''')
-    svg.append(f'<text x="38" y="215" fill="#d8bcab" font-size="11">{first:%Y.%m.%d} / {last:%Y.%m.%d}</text>')
-    svg.append('<text x="775" y="215" fill="#d8bcab" font-size="10">LESS</text>')
+    svg.append(f'<text x="38" y="215" fill="#e1cdd4" font-size="11">{first:%Y.%m.%d} / {last:%Y.%m.%d}</text>')
+    svg.append('<text x="775" y="215" fill="#e1cdd4" font-size="10">LESS</text>')
     for index, color in enumerate(COLORS):
         svg.append(f'<rect x="{809 + 15 * index}" y="205" width="11" height="11" rx="2" fill="{color}"/>')
-    svg.append('<text x="919" y="215" text-anchor="end" fill="#d8bcab" font-size="10">MORE</text>')
+    svg.append('<text x="919" y="215" text-anchor="end" fill="#e1cdd4" font-size="10">MORE</text>')
     return "\n".join([*svg, "</g>", "</svg>", ""])
 
 

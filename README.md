@@ -1,29 +1,22 @@
-<img src="assets/cover.svg" width="960" alt="coneldiablo — Voice AI, CRM, Automation">
+<img src="assets/transmission.webp" width="960" alt="coneldiablo — Voice AI, CRM, Automation. Хромовая скульптура в красном свете.">
 
-Разрабатываю голосовых ассистентов, CRM-интеграции и ботов. В **AVA** связываю телефонию, переписки и каталог товаров с рабочим местом менеджера.
+Делаю голосовых ассистентов и автоматизирую работу с клиентскими обращениями. В **AVA** звонки и переписки сходятся в одной CRM, где менеджер видит историю клиента.
 
-## Избранные проекты
+## 01 / Главный проект
 
-### [AVA 2](https://github.com/coneldiablo/Ava-2)
+<a href="https://github.com/coneldiablo/Ava-2"><img src="assets/ava-voice.webp" width="960" alt="Открыть AVA — Voice AI System"></a>
 
-CRM и голосовой ассистент в одной системе. Обращения из разных каналов, история диалогов, знания о товарах и сценарии обзвона.
+**AVA 2** объединяет голосового ассистента, CRM и каталог товаров. В проекте есть сценарии обзвона и рабочее место менеджера для переписок из разных каналов.
 
-`Python` · `React` · `TypeScript` · `Docker`
+[Исходный код и архитектура ↗](https://github.com/coneldiablo/Ava-2#состав) · `Python` · `React` · `TypeScript` · `Docker`
 
-### [Music Bot](https://github.com/coneldiablo/musicbot-control-center)
+## 02 / Ещё проекты
 
-Telegram-бот для поиска и распознавания музыки с плейлистами и панелью администрирования.
+- **[Music Bot ↗](https://github.com/coneldiablo/musicbot-control-center)** — поиск и распознавание музыки в Telegram, плейлисты и панель администрирования.
+- **[Добрый Чек ↗](https://github.com/coneldiablo/dobry-check)** — открытый концепт платформы для гуманитарных программ в заведениях. [Демо ↗](https://coneldiablo.github.io/dobry-check/)
 
-`Python` · `aiogram` · `SQLite`
+## 03 / Активность
 
-### [Добрый Чек](https://github.com/coneldiablo/dobry-check)
-
-Открытый концепт платформы, где гости заведений могут знакомиться с гуманитарными программами. [Открыть демо](https://coneldiablo.github.io/dobry-check/)
-
-`JavaScript` · `GitHub Pages`
-
-## Активность на GitHub
-
-[<img src="assets/activity.svg" width="960" alt="Календарь активности coneldiablo за год. Чем ярче ячейка, тем выше активность в этот день.">](https://github.com/coneldiablo#contribution-activity)
+[<img src="assets/activity.svg" width="960" alt="Календарь активности GitHub за год. Яркость ячеек показывает активность за день.">](https://github.com/coneldiablo#contribution-activity)
 
 [Все репозитории ↗](https://github.com/coneldiablo?tab=repositories)
