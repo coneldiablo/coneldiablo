@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/coneldiablo?tab=followers"><img src="https://img.shields.io/github/followers/coneldiablo?label=Followers&amp;style=for-the-badge&amp;color=5599ff&amp;labelColor=101a30" alt="Followers"></a>
-  <a href="https://github.com/coneldiablo?tab=repositories"><img src="https://img.shields.io/badge/Explore-My_Projects-5599ff?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=101a30" alt="Explore my projects"></a>
-  <a href="https://github.com/coneldiablo/Ava-2"><img src="https://img.shields.io/badge/Building-AVA_AI-9480ff?style=for-the-badge&amp;labelColor=101a30" alt="Building AVA AI"></a>
+  <a href="https://github.com/coneldiablo?tab=followers"><img src="https://img.shields.io/github/followers/coneldiablo?label=Followers&amp;style=for-the-badge&amp;color=FAFAFA&amp;labelColor=000000" alt="Followers"></a>
+  <a href="https://github.com/coneldiablo?tab=repositories"><img src="https://img.shields.io/badge/Explore-My_Projects-FAFAFA?style=for-the-badge&amp;logo=github&amp;logoColor=000000&amp;labelColor=000000" alt="Explore my projects"></a>
+  <a href="https://github.com/coneldiablo/Ava-2"><img src="https://img.shields.io/badge/Building-AVA_AI-FAFAFA?style=for-the-badge&amp;logoColor=000000&amp;labelColor=000000" alt="Building AVA AI"></a>
 </p>
 
 ### 👨‍💻 Обо мне
@@ -42,21 +42,21 @@ class Coneldiablo:
 
 **Backend & bots**
 
-![Python](https://img.shields.io/badge/Python-101a30?style=for-the-badge&logo=python&logoColor=79b8ff)
-![FastAPI](https://img.shields.io/badge/FastAPI-101a30?style=for-the-badge&logo=fastapi&logoColor=58ddc4)
-![aiogram](https://img.shields.io/badge/aiogram-101a30?style=for-the-badge&logo=telegram&logoColor=79b8ff)
+![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=FAFAFA)
+![FastAPI](https://img.shields.io/badge/FastAPI-000000?style=for-the-badge&logo=fastapi&logoColor=FAFAFA)
+![aiogram](https://img.shields.io/badge/aiogram-000000?style=for-the-badge&logo=telegram&logoColor=FAFAFA)
 
 **Frontend**
 
-![TypeScript](https://img.shields.io/badge/TypeScript-101a30?style=for-the-badge&logo=typescript&logoColor=79b8ff)
-![React](https://img.shields.io/badge/React-101a30?style=for-the-badge&logo=react&logoColor=79dfff)
-![JavaScript](https://img.shields.io/badge/JavaScript-101a30?style=for-the-badge&logo=javascript&logoColor=f3d66b)
+![TypeScript](https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=FAFAFA)
+![React](https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=FAFAFA)
+![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=FAFAFA)
 
 **Tools & infrastructure**
 
-![Docker](https://img.shields.io/badge/Docker-101a30?style=for-the-badge&logo=docker&logoColor=79b8ff)
-![Linux](https://img.shields.io/badge/Linux-101a30?style=for-the-badge&logo=linux&logoColor=eeeef5)
-![Git](https://img.shields.io/badge/Git-101a30?style=for-the-badge&logo=git&logoColor=fa9981)
+![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=FAFAFA)
+![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=FAFAFA)
+![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=FAFAFA)
 
 ### 🚀 Что я делаю
 

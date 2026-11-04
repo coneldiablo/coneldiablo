@@ -26,8 +26,8 @@ jobs:
         with:
           github_user_name: coneldiablo
           outputs: |
-            assets/snake.svg?color_snake=#536dfe&color_dots=#edf2fa,#c2d7ff,#88b3ff,#578bfa,#375ade
-            assets/snake-dark.svg?color_snake=#b9a0ff&color_dots=#15213a,#25497a,#3b73bc,#619dff,#9ec5ff
+            assets/snake.svg?color_snake=#000000&color_dots=#F4F4F5,#D4D4D8,#A1A1AA,#71717A,#3F3F46
+            assets/snake-dark.svg?color_snake=#FAFAFA&color_dots=#18181B,#27272A,#3F3F46,#71717A,#A1A1AA
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Commit updated artwork
