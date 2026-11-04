@@ -17,6 +17,6 @@
 
 ## 03 / Активность
 
-[<img src="assets/activity.svg" width="960" alt="Календарь активности GitHub за год. Яркость ячеек показывает активность за день.">](https://github.com/coneldiablo#contribution-activity)
+[<img src="assets/contribution-signal.svg" width="960" alt="Календарь активности GitHub за год. Яркость ячеек показывает активность за день.">](https://github.com/coneldiablo#contribution-activity)
 
 [Все репозитории ↗](https://github.com/coneldiablo?tab=repositories)

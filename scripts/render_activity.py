@@ -7,7 +7,7 @@ from urllib.request import Request, urlopen
 
 
 CALENDAR_URL = "https://github.com/users/coneldiablo/contributions"
-ASSET = Path(__file__).resolve().parents[1] / "assets" / "activity.svg"
+ASSET = Path(__file__).resolve().parents[1] / "assets" / "contribution-signal.svg"
 COLORS = ("#2a1f24", "#83404b", "#b64b54", "#ea5453", "#ffa196")
 MONTHS = ("JAN", "FEB", "MAR", "APR", "MAY", "JUN",
           "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
