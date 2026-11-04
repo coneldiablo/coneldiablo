@@ -14,10 +14,20 @@
 
 ```python
 class Coneldiablo:
-    languages = ["Python", "TypeScript", "JavaScript"]
-    focus = ["Voice AI", "CRM integrations", "Telegram bots"]
-    building = "AVA — CRM & voice assistant"
-    toolkit = ["React", "FastAPI", "Docker", "Linux"]
+    building = "AVA"
+    languages = [
+        "Python", "TypeScript",
+        "JavaScript",
+    ]
+    focus = [
+        "Voice AI",
+        "CRM integrations",
+        "Telegram bots",
+    ]
+    toolkit = [
+        "React", "FastAPI",
+        "Docker", "Linux",
+    ]
 ```
 
 🔊 **Голосовой AI** — ассистенты, телефония и сценарии обзвона.<br>
