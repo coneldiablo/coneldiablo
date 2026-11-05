@@ -32,7 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Commit updated artwork
         run: |
-          git add assets/stats.svg assets/languages.svg assets/live.svg assets/snake.svg assets/snake-dark.svg
+          git add assets/stats.svg assets/languages.svg assets/live.svg assets/trophies.svg assets/activity.svg assets/snake.svg assets/snake-dark.svg
           if git diff --cached --quiet; then
             exit 0
           fi

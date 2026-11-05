@@ -11,6 +11,9 @@ ASSETS = Path(__file__).resolve().parents[1] / "assets"
 def api(path):
     return json.loads(subprocess.check_output(["gh", "api", path], text=True))
 
+def graphql(query):
+    return json.loads(subprocess.check_output(["gh", "api", "graphql", "-f", f"query={query}"], text=True))
+
 def frame(title, subtitle, body):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="440" height="230" viewBox="0 0 440 230" role="img" aria-label="{escape(title)}">
 <rect x="1" y="1" width="438" height="228" rx="16" fill="#09090B" stroke="#27272A"/>
@@ -91,5 +94,55 @@ if active:
 else:
     commit_lines.append('<text x="26" y="115" fill="#71717A" font-size="13">No recent activity</text>')
 (ASSETS / "live.svg").write_text(frame("Last shipped", "Most recent commit, fetched live", "\n".join(commit_lines)))
+
+contrib = graphql('''{
+  user(login: "coneldiablo") {
+    createdAt
+    contributionsCollection {
+      totalCommitContributions
+      totalPullRequestContributions
+      totalIssueContributions
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { contributionCount date } }
+      }
+    }
+  }
+}''')["data"]["user"]
+
+created = datetime.fromisoformat(contrib["createdAt"].replace("Z", "+00:00"))
+years_active = max((datetime.now(timezone.utc) - created).days / 365.25, 0.1)
+cc = contrib["contributionsCollection"]
+milestones = [
+    (f"{years_active:.1f}y", "On GitHub since"),
+    (cc["contributionCalendar"]["totalContributions"], "Contributions (12 mo)"),
+    (cc["totalPullRequestContributions"], "Pull requests opened"),
+    (cc["totalIssueContributions"], "Issues opened"),
+]
+body = ""
+for i, (value, label) in enumerate(milestones):
+    x, y = 26 + (i % 2) * 210, 110 + (i // 2) * 79
+    body += f'<text x="{x}" y="{y}" fill="#FAFAFA" font-size="32" font-weight="700">{value}</text><text x="{x}" y="{y+22}" fill="#A1A1AA" font-size="12">{label}</text>'
+(ASSETS / "trophies.svg").write_text(frame("Milestones", "Computed live from the public contribution graph", body))
+
+weeks = contrib["contributionsCollection"]["contributionCalendar"]["weeks"]
+totals = [sum(d["contributionCount"] for d in w["contributionDays"]) for w in weeks]
+peak = max(totals) or 1
+bar_w, gap, left, top, chart_h = 12, 4, 20, 20, 110
+width = left * 2 + len(totals) * (bar_w + gap)
+bars = ""
+for i, count in enumerate(totals):
+    h = 6 if count == 0 else round(6 + (count / peak) * (chart_h - 6))
+    x = left + i * (bar_w + gap)
+    y = top + chart_h - h
+    shade = "#27272A" if count == 0 else ("#FAFAFA" if count == peak else "#71717A")
+    bars += f'<rect x="{x}" y="{y}" width="{bar_w}" height="{h}" rx="2" fill="{shade}"/>'
+activity_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="170" viewBox="0 0 {width} 170" role="img" aria-label="Weekly contributions over the last year">
+<rect width="{width}" height="170" rx="16" fill="#09090B"/>
+<g font-family="ui-monospace,Menlo,Consolas,monospace">
+<text x="{left}" y="18" fill="#A1A1AA" font-size="12">52-week contribution rhythm · peak week {peak}</text>
+{bars}
+</g></svg>'''
+(ASSETS / "activity.svg").write_text(activity_svg)
 
 print(f"Updated cards using {len(repos)} public repositories")

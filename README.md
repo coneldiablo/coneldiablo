@@ -87,16 +87,16 @@ class Coneldiablo:
   <img height="195" src="https://streak-stats.demolab.com?user=coneldiablo&hide_border=true&background=09090B&ring=FAFAFA&fire=FAFAFA&currStreakLabel=FAFAFA&sideLabels=A1A1AA&currStreakNum=FAFAFA&sideNums=A1A1AA&dates=71717A&border_radius=16" alt="streak stats">
 </p>
 
-### 🏆 Trophies
+### 🏆 Milestones
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=coneldiablo&theme=bnw&no-frame=true&no-bg=true&row=1&margin-w=10&column=7" alt="trophies">
+  <img src="assets/trophies.svg" width="440" alt="Milestones computed live from the public contribution graph: account age, contributions, pull requests, issues">
 </p>
 
-### 📈 Activity graph
+### 📈 Weekly rhythm
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=coneldiablo&theme=github-compact&bg_color=09090B&color=FAFAFA&line=FAFAFA&point=FAFAFA&area=true&area_color=18181B&hide_border=true&hide_title=true" alt="activity graph" width="100%">
+  <img src="assets/activity.svg" width="100%" alt="52-week contribution rhythm, bar per week, computed live">
 </p>
 
 ### 🐍 Contribution snake
